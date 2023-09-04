@@ -11,7 +11,6 @@ export default function Home() {
     try {
       const response = await axios.get('https://api.github.com/users/Ghullam-Mustafa/followers');
       setData(response.data);
-      console.log("response", response.data);
     } catch (error) {
       console.error("Error loading followers:", error);
     }
